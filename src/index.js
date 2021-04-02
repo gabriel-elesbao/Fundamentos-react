@@ -1,17 +1,43 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import './index.css'
+import React from 'react'
+import ReactDOM from 'react-dom'
+import Card from './components/layout/Card'
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+// import Primeiro from './components/Pirmeiro'
+// import WithParameters from './components/WithParameters';
+// import WithChildren from './components/WithChildren';
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+ReactDOM.render(    // esse metodo vai receber o elemento a qual eu quero redenrizar 
+    <div>
+
+        {/* <Primeiro>  </Primeiro>
+
+        <WithParameters 
+        title="This is the title"
+        subtitle="This is the subtitle"> </WithParameters>
+
+        <WithParameters 
+        title="Opa"
+        subtitle="Epa"> </WithParameters> */}
+        {/* <WithChildren> 
+            <ul>
+              <h1>teste</h1>
+                <li>Ana</li>
+                <li>Calros</li>
+                <li>Bia</li>
+                <li>Daniel</li>
+            </ul>
+        </WithChildren> */}
+        <div>
+            <Card title = "Exercicio X">
+                 Conteudo
+            </Card>  
+            
+        </div>
+
+    </div>,
+    
+
+    document.getElementById('root')
+);  
+ 
